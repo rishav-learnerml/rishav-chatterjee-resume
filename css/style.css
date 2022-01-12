@@ -1,0 +1,141 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light
+*/
+
+/* Color Variables 
+---------------------------------*/
+
+:root {
+    --almost_white: #F7FFF7;
+    --dark_gray: #343434;
+    --dark_blue: #2F3061;
+    --yellow: #FFE66D;
+    --light_blue: #A1C6D7;
+  }
+
+/* Global Styles
+---------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    color: var(--dark_gray);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: var(--yellow)
+}
+
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: 42px;
+}
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Profile
+---------------------------------*/
+header {
+    background-color: var(--dark_blue);
+    color: var(--almost_white);
+}
+
+/* Projects
+---------------------------------*/
+.projects {
+    background: var(--almost_white);
+}
+
+.projects .btn {
+    color: var(--almost_white);
+    background: var(--dark_blue);
+    text-decoration: none;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+  }
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed var(--dark_gray);
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
+.projects a {
+    color: var(--dark_blue);
+}
+
+
+/* Work Experiance
+---------------------------------*/
+.work-experiance {
+    background: var(--light_blue);
+}
+
+
+/* Education
+---------------------------------*/
+.education {
+
+}
+
+/* Contact Info
+---------------------------------*/
+footer {
+    background-color: var(--dark_gray);
+}
+
+footer h2 {
+    color: var(--almost_white);
+}
